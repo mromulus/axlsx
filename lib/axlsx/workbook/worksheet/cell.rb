@@ -387,7 +387,7 @@ module Axlsx
     def string_width(string, font_size)
       [
         string.to_s.count(Worksheet::THIN_CHARS),
-        (string.to_s.size - string.to_s.count(Worksheet::THIN_CHARS))*0.5,
+        (string.to_s.size - string.to_s.count(Worksheet::THIN_CHARS))*0.75,
         3
       ].sum * font_scale
     end
